@@ -41,5 +41,16 @@ pipeline {
                 }
             }
     }
+// Deploy to cluster
+    stage('DEPLOY') {
+        steps {
+                sh 'kubectl rollout restart deployment web words -n demo-words'
+        }
+        post {
+            failure {
+                echo 'The deployment has failed. Redeploy deployment manually.'
+            }
+        }
+    }
   }
 }
