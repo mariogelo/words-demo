@@ -80,7 +80,7 @@ body {
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
 	font-size: 45px;
-	color: white;
+	color: red;
 	line-height: 155px;
 	height: 175px;
 	vertical-align: middle;
@@ -91,7 +91,7 @@ body {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	bottom: 8px;
+	bottom: 28px;
 	font-size: 0.8em;
 	height: 14px;
 }
